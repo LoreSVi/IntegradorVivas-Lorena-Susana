@@ -1,1 +1,106 @@
-/* You can add global styles to this file, and also import other style files */
+body {
+   margin: 16px;;
+   padding: 3;
+   font-family: sans-serif;
+   color:azure;
+ }
+ .navbar {
+  background: rgb(202, 77, 192);
+  background: linear-gradient(90deg, rgba(222,86,210,1) 14%, rgba(213,129,197,1) 35%, rgba(241,160,226,0.20818749863226538) 64%);
+}
+
+
+    i.fa-brands.fa-instagram.fa-2xl:hover{
+    color: blueviolet;
+    }
+    i.fa-brands.fa-linkedin.fa-2xl:hover{
+        color:aqua;
+    }
+    i.fa-brands.fa-github.fa-2xl:hover{
+        color:rgb(216, 133, 24);
+    }
+    i.fa-solid.fa-user-lock.fa-2xl:hover{
+        color:rgb(29, 29, 63);
+    }
+.list-group{
+ --bs-list-group-bg: transparent;
+}
+.list-group{
+--bs-list-group-border-width: none;
+}
+ 
+ #primer-tarjeta {
+    border-radius: 32px;
+    margin:10 px 10px;
+    padding: 20px;
+    border-color:rgb(0, 132, 255);
+}
+
+.presentacion.tarjeta#primera{
+  padding: 0;   
+}
+div#fondo-perfil{
+    display: flex;
+    z-index:1;
+}
+
+.yo {
+  text-align: center;
+  margin-top: -300px;
+}
+
+div#perfil-fondo img {
+width:100%;
+height: 800px;
+border-radius: 32px 32px 32px 32px;
+}
+
+.imagen-perfil {
+    border-radius: 80%;
+    width: 250px;
+    height: 250px;
+    margin-top: -850px;
+    margin-left: 500px;
+  
+}
+
+#tarjeta-experiencia {
+  background-color: rgb(116, 88, 141);
+}
+
+#tarjeta-educacion {
+  background-color: rgb(81, 81, 166);
+}
+.Habilidades {
+    padding: 2rem; 
+    }
+
+.icono {
+padding-bottom: 1rem;
+}
+
+.card-proyecto {
+  background-color: rgb(235, 124, 216);
+}
+.navegacion{
+    position: sticky;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 3.5rem;
+    background-color: var(--bg-cor);
+    box-shadow: 0 3px 5px rgba(63, 207, 34, 0.1);
+    font-style:normal;
+    color:rgb(34, 5, 73);
+    font-size: larger;
+    font-family:Arial, Helvetica, sans-serif;
+    list-style:none;
+}
+  
+  .navegacion-ul {
+    display: flex;
+    gap: 1.9rem;
+     }
