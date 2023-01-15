@@ -1,6 +1,8 @@
 body {
    margin: 16px;;
    padding: 3;
+   padding-left: 2rem;
+   padding-right: 2rem;
    font-family: sans-serif;
    color:azure;
  }
@@ -62,13 +64,13 @@ height: 800px;
 border-radius: 32px 32px 32px 32px;
 }
 
+
 .imagen-perfil {
     border-radius: 80%;
     width: 250px;
     height: 250px;
     margin-top: -850px;
     margin-left: 500px;
-  
 }
 
 #tarjeta-experiencia {
