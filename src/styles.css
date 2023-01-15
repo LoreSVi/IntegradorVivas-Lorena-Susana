@@ -91,7 +91,10 @@ padding-bottom: 1rem;
 
 .card-proyecto {
   background-color: rgb(167, 150, 173);
+  border: 1rem;
+  box-shadow: -2px -2px 5px 2px #000; 
 }
+
 .navegacion{
     position: sticky;
     top: 0;
