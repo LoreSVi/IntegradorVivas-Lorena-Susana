@@ -1,0 +1,38 @@
+<div class="login" id="loguin">
+        <ul class="list-group list-group-horizontal align-items-center"></ul>
+ <li class="list-group-item">
+   <button type="button" class="btn btn-primary btn-sm p-2">
+   <i class="fa-solid fa-user-lock fa-3x text-white" data-bs-toggle="modal"
+   data-bs-target="#exampleModal"></i>
+   </button>
+   </li>
+</div>
+                
+     <!-- Modal -->
+ <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h3 class="modal-title" style="color:blue" id="exampleModalLabel">Iniciar Sesión</h3>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <div class="mb-3 row">
+           <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
+           <div class="col-sm-10">
+             <input type="text" class="form-control" id="inputEmail" value="email@dominio.com" placeholder="Ingresa Email">
+           </div>
+         </div>
+         <div class="mb-3 row">
+           <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+           <div class="col-sm-10">
+             <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa Contraseña">
+           </div>
+         </div>
+       </div>
+       <div class="modal-footer">
+         <button type="button" class="btn btn-primary">Iniciar Sesion</button>
+       </div>
+     </div>
+   </div>
+ </div>
