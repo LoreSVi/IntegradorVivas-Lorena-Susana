@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { PortfolioService } from 'src/app/servicios/portfolio.service';
 
 @Component({
@@ -9,3 +9,4 @@ import { PortfolioService } from 'src/app/servicios/portfolio.service';
 export class HeaderComponent {
   
 }
+    
