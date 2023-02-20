@@ -15,7 +15,7 @@ import { FooterComponent } from './components/footer/footer.component';
 import { Error404Component } from './components/error404/error404.component';
 import { IndexComponent } from './components/index/index.component';
 import { LoginComponent } from './components/login/login.component';
-import { LogoutComponent } from './components/logout/logout.component';
+
 
 
 @NgModule({
@@ -32,8 +32,7 @@ import { LogoutComponent } from './components/logout/logout.component';
     Error404Component,
     IndexComponent,
     LoginComponent,
-    LogoutComponent,
-  ],
+     ],
   imports: [
     BrowserModule,
     AppRoutingModule,
