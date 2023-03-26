@@ -1,36 +1,45 @@
-<div class="login" id="login">
-  <ul class="list-group list-group-horizontal align-items-center"></ul>
-<li class="list-group-item">
-<button type="button" class="btn btn-primary btn-sm p-2">
-  <i class="fa-solid fa-user-lock fa-3x text-white" data-bs-toggle="modal"
-data-bs-target="#exampleModal"></i>
-</button>
-</li>
-</div>
+<section class="vh-100 gradient-custom">
+  <div class="container py-5 h-100">
+    <div class="row d-flex justify-content-center align-items-center h-100">
+      <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+        <div class="card bg-secondary text-white" style="border-radius: 1rem;">
+          <div class="card-body p-5 text-center">
 
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-   <div class="modal-dialog">
-     <div class="modal-content">
-       <div class="modal-header">
-         <h3 class="modal-title" style="color:blue" id="exampleModalLabel">Iniciar Sesión</h3>
-         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-       </div>
-       <div class="modal-body">
-         <div class="mb-3 row">
-           <label for="inputEmail" class="col-sm-2 col-form-label">Email</label>
-           <div class="col-sm-10">
-             <input type="text" class="form-control" id="inputEmail" value="email@dominio.com" placeholder="Ingresa Email">
-           </div>
-         </div>
-         <div class="mb-3 row">
-           <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
-           <div class="col-sm-10">
-             <input type="password" class="form-control" id="inputPassword" placeholder="Ingresa Contraseña">
-           </div>
-         </div>
-       </div>
-         <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
-       </div>
-     </div>
-   </div>
- 
+            <div class="mb-md-5 mt-md-4 pb-5">
+
+              <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
+              <p class="text-white-50 mb-5">Please enter your login and password!</p>
+
+
+             <form #f="ngForm" (ngSubmit)="onLogin()" novalidate>
+              <div class="form-outline form-white mb-4">
+                <input type="email" id="nombreUsuario" name="nombreUsuario" class="form-control form-control-lg" [(ngModel)]="nombreUsuario" required/>
+                <label class="form-label" for="nombreUsuario">Usuario</label>
+              </div>
+
+              <div class="form-outline form-white mb-4">
+                <input type="password" id="password" class="form-control form-control-lg" [(ngModel)]="password" required/>/>
+                <label class="form-label" for="password">Password</label>
+              </div>
+
+             <!-- <p class="small mb-5 pb-lg-2"><a class="text-white-50" href="#!">Forgot password?</a></p>-->
+
+              <button class="btn btn-outline-light btn-lg px-5" type="submit">Login</button>
+
+
+             </form>
+
+
+            </div>
+
+            <div>
+              <p class="mb-0">Don't have an account? <a href="#!" class="text-white-50 fw-bold">Sign Up</a>
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

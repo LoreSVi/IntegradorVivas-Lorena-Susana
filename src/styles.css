@@ -6,10 +6,8 @@ body {
    font-family: sans-serif;
    color:azure;
  }
- .navbar {
-  background: rgb(202, 77, 192);
-  background: linear-gradient(90deg, rgba(222,86,210,1) 14%, rgba(213,129,197,1) 35%, rgba(241,160,226,0.20818749863226538) 64%);
-}
+
+  
 
 
     i.fa-brands.fa-instagram.fa-3x:hover{
@@ -29,8 +27,9 @@ body {
     .list-group-item{
       --bs-list-group-bg: transparent;
      --bs-list-group-border-width: none;
+     list-style: none;
      }
-
+     
  
  #primer-tarjeta {
     border-radius: 32px;
@@ -43,11 +42,7 @@ body {
   text-align: center;
   margin-top: -300px;
 }
-h6{
-  padding-left: 10rem;
-  padding-right: 10rem;
-  text-align: center;
-}
+
 
 .presentacion.tarjeta#primera{
   padding: 0;   
