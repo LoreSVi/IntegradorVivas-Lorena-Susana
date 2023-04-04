@@ -1,19 +1,29 @@
-<div class=" row">
-<nav class="container">
-  <div class="logo">
+
+<nav class="navbar navbar-expand-lg botonera">
+  <div class="container-fluid">
+  <a class="navbar-brand" href="https://www.argentina.gob.ar/economia/conocimiento/argentina-programa" target="_blank">
       <img src="../../../assets/IMG/arg-programaLogo.png" alt="Logo Argentina Programa" id="logoAp" >
-    </div>
-    <div class="redes">
-    <ul class="list-group list-group-horizontal"> 
-     <li class="list-group-item"><a href="https://github.com/LoreSVi/MiproyectoFrontEnd.git" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li> 
-     <li class="list-group-item"><a href="https://www.linkedin.com/in/lorena-vivas-966880a4/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
-     <li class="list-group-item"><a href="https://www.instagram.com/lorelolivs/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
+  </a>
+<button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
+     <li class="nav-item"><a href="https://github.com/LoreSVi/MiproyectoFrontEnd.git" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li> 
+     <li class="nav-item"><a href="https://www.linkedin.com/in/lorena-vivas-966880a4/" target="_blank"><i class="fa-brands fa-linkedin fa-2xl"></i></a></li>
+     <li class="nav-item"><a href="https://www.instagram.com/lorelolivs/" target="_blank"><i class="fa-brands fa-instagram fa-2xl"></i></a></li>
 
 <!-- Login -->
-<li><button type="button" class="btn btn-dark"><a href="#"class="nav-link" (click)="login()" *ngIf="!isLogged" >Ingresar</a></button></li>
+<li><button type="button" class="btn btn-dark"><a href="#"class="nav-link" (click)="login()" *ngIf="!isLogged">Ingresar</a></button></li>
 <li><button type="button" class="btn btn-dark"><a href="#"class="nav-link" (click)="onLogOut()" *ngIf="isLogged" >Salir</a></button></li>
       </ul>
     </div>
+    </div>
+    </nav>
+
+
 
         
           

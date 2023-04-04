@@ -6,30 +6,7 @@ body {
    font-family: sans-serif;
    color:azure;
  }
-
-  
-
-
-    i.fa-brands.fa-instagram.fa-3x:hover{
-    color: blueviolet;
-    }
-
-    i.fa-brands.fa-linkedin.fa-3x:hover{
-        color:aqua;
-    }
-    i.fa-brands.fa-github.fa-3x:hover{
-        color:rgb(216, 133, 24);
-    }
-    i.fa-solid.fa-user-lock.fa-3x:hover{
-        color:rgb(29, 29, 63);
-    }
-
-    .list-group-item{
-      --bs-list-group-bg: transparent;
-     --bs-list-group-border-width: none;
-     list-style: none;
-     }
-     
+ 
  
  #primer-tarjeta {
     border-radius: 32px;
@@ -38,15 +15,13 @@ body {
     border-color:rgb(0, 132, 255);
 }
 
-.yo {
-  text-align: center;
-  margin-top: -300px;
+@media (max-width: 480px){
+  #primer-tarjeta {
+      align-items: column;
+  }
 }
 
 
-.presentacion.tarjeta#primera{
-  padding: 0;   
-}
 div#fondo-perfil{
     display: flex;
     z-index:1;
@@ -67,6 +42,11 @@ border-radius: 32px 32px 32px 32px;
     margin-top: -850px;
     margin-left: 500px;
 }
+@media (max-width: 1130px){
+  .imagen-perfil{
+    margin-left: 7em;
+  }
+  }
 
 #tarjeta-experiencia {
   background: linear-gradient(90deg, rgb(196, 185, 194) 14%, rgb(221, 154, 208) 35%, rgba(241,160,226,0.20818749863226538) 64%);
@@ -90,25 +70,6 @@ padding-bottom: 1rem;
   box-shadow: -2px -2px 5px 2px #000; 
 }
 
-.navegacion{
-    position: sticky;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 1.5rem 3.5rem;
-    background-color: var(--bg-cor);
-    box-shadow: 0 3px 5px rgba(63, 207, 34, 0.1);
-    font-style:normal;
-    color:rgb(34, 5, 73);
-    font-size: larger;
-    font-family:Arial, Helvetica, sans-serif;
-    list-style:none;
-}
+
   
-  .navegacion-ul {
-    display: flex;
-    gap: 1.9rem;
-     }
+  
