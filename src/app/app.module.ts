@@ -17,6 +17,7 @@ import { Error404Component } from './components/error404/error404.component';
 import { IndexComponent } from './components/index/index.component';
 import { HttpClientModule } from '@angular/common/http';
 import { LoginComponent } from './components/login/login.component';
+import { NewExperienciaComponent } from './components/experiencia/new-experiencia/new-experiencia.component';
 
 
 
@@ -35,6 +36,7 @@ import { LoginComponent } from './components/login/login.component';
     Error404Component,
     IndexComponent,
     LoginComponent,
+    NewExperienciaComponent,
      ],
 
   imports: [

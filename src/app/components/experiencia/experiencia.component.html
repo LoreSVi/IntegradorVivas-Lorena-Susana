@@ -1,57 +1,31 @@
-  <!--Sección Experiencia-->
-  <div id="experiencia"  class="experiencia">
-    <div class="row">
-    <h2>Experiencia Laboral</h2>
+<div class="row">
+  <h1>Experiencia laboral</h1>
+  <div class="col-lg-2">
       <button type="button" class="btn btn-dark" routerLink="/nuevaexp" *ngIf="isLogged">
           Nueva Experiencia
       </button>
   </div>
+
+  <div class="col lg 1"></div>
+  <div class="col-lg-11">
+      <table class="table">
+          <tbody>
+              <tr *ngFor="let Experiencia of expe">
+                  <td>
+                      <h2>{{Experiencia.nombreE}}</h2>
+                  </td>
+                  <td>{{Experiencia.descripcionE}}</td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-light" routerLink="/editexp/{{Experiencia.id}}">
+                          <i class="bi bi-pencil-fill"></i> EDITAR</button>
+                  </td>
+                  <td *ngIf="isLogged">
+                      <button class="btn btn-danger" (click)="delete(Experiencia.id)">
+                          <i class="bi bi-trash-fill"></i> BORRAR</button>
+                  </td>
+              </tr>
+          </tbody>
+      </table>
+  </div>
+
 </div>
-
-<div class="container text-center">
-     <div class="row row-cols-1 row-cols-md-2 g-4"> 
-      <div class="col">
-        <div class="mi-experiencia">
-          <div class="card mb-3">
-           <div class="row g-0" id="tarjeta-experiencia">
-             <div class="col-md-4">
-               <img src="../assets/IMG/megatlonlogo.jpg" class="img-fluid rounded-start" alt="Escudo GCBA">
-             </div>
-             <div class="col-md-8">
-               <div class="card-body">
-                <h5 class="empleo">Profesora</h5>
-                <p class="descripcion-empleo">Administrativa, atención Secretaría Escolar, Técnica Aux. Bibliotecaria.Clases de Educación Fisica y talleres de danza</p>
-                <p class="institucion-empleo">GCBA Ministerio de Educación</p> 
-                <p class="tipo-empleo">Jornada completa</p> 
-                <p class="fecha-empleo">Octubre 2012-actualidad</p> 
-                <button type="button" class="btn btn-light"><a href="#" class="experiencia-laboral">Agregar Experiencia</a></button>
-               </div>
-              </div>
-            </div>
-          </div>
-        </div>
-       
-
-       <div class="col">
-              <div class="mi-experiencia">
-                <div class="card mb-3" >
-                 <div class="row g-0" id="tarjeta-experiencia">
-                   <div class="col-md-4">
-                     <img src="../assets/IMG/megatlonlogo.jpg" class="img-fluid rounded-start" alt="Escudo GCBA">
-                   </div>
-                   <div class="col-md-8">
-                     <div class="card-body">
-                       <h5 class="empleo">Profesora y Entrenadora</h5>
-                       <p class="descripcion-empleo">Personal Trainer, Sala de musculación, taller abdominales, localizada, gap, natación, pilates reformer, etc...</p>
-                       <p class="institucion-empleo">Megatlón</p> 
-                       <p class="tipo-empleo">Jornada completa</p> 
-                       <p class="fecha-empleo">Mayo2005-Nov2012</p> 
-                       <button type="button" class="btn btn-light"><a href="#" class="experiencia-laboral">Agregar Experiencia</a></button>
-                     </div>
-                   </div>
-                 </div>
-               </div>
-             </div>
-    </div>
-     </div>
-     

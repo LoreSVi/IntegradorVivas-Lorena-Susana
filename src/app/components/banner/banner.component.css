@@ -1,5 +1,5 @@
 .menulore{
-        position: sticky;
+    
         top: 0;
         left: 0;
         z-index: 1;
@@ -23,6 +23,10 @@
         
     @media (max-width: 480px){
         .menulore {
+            display: inline-block;
+            justify-content: space-around;
             align-items: column;
+            padding: 1rem;
+            margin: 1rem
         }
     }
